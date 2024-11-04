@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.h2demo.h2demo.model.Product;
 import com.h2demo.h2demo.service.ProductService;
-
 @Controller
 @RequestMapping("/products")
 
