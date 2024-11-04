@@ -7,13 +7,24 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Product {
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private double price;
 
+    // Default constructor
+    public Product() {
+    }
+
+    // Constructor to initialize name and price
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    // Getters and Setters
     public Long getId() {
         return id;
     }
